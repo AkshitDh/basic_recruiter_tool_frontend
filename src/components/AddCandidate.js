@@ -62,6 +62,7 @@ export default function AddCandidate() {
                 onChange={handleChange}
                 className="w-full block px-2 py-2 mt-2 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 placeholder="John cooks"
+                required
               />
             </label>
           </div>
@@ -138,6 +139,7 @@ export default function AddCandidate() {
                 onChange={handleChange}
                 className="w-full block px-2 py-2 mt-2 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 placeholder="1"
+                required
               />
             </label>
           </div>
