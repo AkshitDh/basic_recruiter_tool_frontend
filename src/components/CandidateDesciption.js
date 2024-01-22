@@ -58,7 +58,7 @@ export default function CandidateDesciption() {
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
         Expected Salary:{" "}
         {candidateDescription.expected_salary
-          ? candidateDescription.expected_salary
+          ? "₹" + candidateDescription.expected_salary
           : "NULL"}
       </div>
     </div>
