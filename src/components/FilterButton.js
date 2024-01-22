@@ -10,7 +10,7 @@ export default function FilterButton() {
   const [filters, setFilters] = useState({
     min_score: 1,
     max_score: 6,
-    current_status: null,
+    current_status: "",
   });
 
   function toggleFilterMenu() {
@@ -37,7 +37,7 @@ export default function FilterButton() {
       return candidate.score <= filters.max_score;
     });
 
-    if (filters.current_status) {
+    if (filters.current_status !== "") {
       newList = newList.filter((candidate) => {
         return candidate.current_status === filters.current_status;
       });
