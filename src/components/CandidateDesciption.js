@@ -83,7 +83,10 @@ export default function CandidateDesciption() {
         Email: {candidateDescription.email ? candidateDescription.email : "N/A"}
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
-        Phone: {candidateDescription.phone ? candidateDescription.phone : "N/A"}
+        Phone:{" "}
+        {candidateDescription.phone_number
+          ? candidateDescription.phone_number
+          : "N/A"}
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
         Experience with Node:
