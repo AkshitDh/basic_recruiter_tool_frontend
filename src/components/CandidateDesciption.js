@@ -80,12 +80,10 @@ export default function CandidateDesciption() {
         </span>
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
-        Email:{" "}
-        {candidateDescription.email ? candidateDescription.email : "NULL"}
+        Email: {candidateDescription.email ? candidateDescription.email : "N/A"}
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
-        Phone:{" "}
-        {candidateDescription.phone ? candidateDescription.phone : "NULL"}
+        Phone: {candidateDescription.phone ? candidateDescription.phone : "N/A"}
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
         Experience with Node:
@@ -113,13 +111,13 @@ export default function CandidateDesciption() {
         Additional Skills:{" "}
         {candidateDescription.additional_skills
           ? candidateDescription.additional_skills
-          : "NULL"}
+          : "N/A"}
       </div>
       <div className="flex font-medium pt-2 pb-2 lg:text-2xl md:text:lg">
         Expected Salary:{" "}
         {candidateDescription.expected_salary
           ? "₹" + candidateDescription.expected_salary
-          : "NULL"}
+          : "N/A"}
       </div>
     </div>
   );
